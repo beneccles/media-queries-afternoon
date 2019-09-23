@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" />
+    <script async src="./script.js"></script>
+    <script async src="https://kit.fontawesome.com/274a7e25f8.js" crossorigin="anonymous"></script>
+    <title>Media Queries!</title>
+</head>
+
+
+<body onscroll={removeMenu()}>
+        <header>
+                <div class="headerBar">
+                    <div class="logo">
+                        <h1 id="logo">Start Bootstrap</h1>
+                    </div>
+                    <nav class="navs">
+                        <span class="nav-link">SERVICES</span>
+                        <span class="nav-link">PORTFOLIO</span>
+                        <span class="nav-link">ABOUT</span>
+                        <span class="nav-link">TEAM</span>
+                        <span class="nav-link">CONTACT</span>
+                        <i id="hamburger" onclick="clickHamburger()" class="fas fa-bars fa-2x"></i>
+                    </nav>
+                </div>
+                <div id="dropdown" class="dropdown hide">
+                    <div class="container">
+                            <span class="nav-link">SERVICES</span>
+                            <span class="nav-link">PORTFOLIO</span>
+                            <span class="nav-link">ABOUT</span>
+                            <span class="nav-link">TEAM</span>
+                            <span id="dropSpanLast" class="nav-link">CONTACT</span>
+                    </div>
+                </div>
+            </header>
+            <div class="heroImage">
+
+            </div>
+</body>
+
+</html>
