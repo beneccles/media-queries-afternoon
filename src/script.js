@@ -14,3 +14,15 @@ function removeMenu() {
         dropdown.classList.add('hide')
     }
 }
+
+function makeTransparent() {
+    removeMenu()
+    const header = document.getElementById('headerBar')
+
+    if (header.classList.contains('goClear')) {
+        header.classList.remove('goClear')
+    } else {
+        header.classList.add('goClear')
+    }
+
+}

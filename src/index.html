@@ -12,9 +12,9 @@
 </head>
 
 
-<body onscroll={removeMenu()}>
+<body onscroll={makeTransparent()}>
         <header>
-                <div class="headerBar">
+                <div id="headerBar" class="headerBar goClear">
                     <div class="logo">
                         <h1 id="logo">Start Bootstrap</h1>
                     </div>
@@ -27,7 +27,9 @@
                         <i id="hamburger" onclick="clickHamburger()" class="fas fa-bars fa-2x"></i>
                     </nav>
                 </div>
-                <div id="dropdown" class="dropdown hide">
+                
+            </header>
+            <div id="dropdown" class="dropdown hide">
                     <div class="container">
                             <span class="nav-link">SERVICES</span>
                             <span class="nav-link">PORTFOLIO</span>
@@ -36,9 +38,16 @@
                             <span id="dropSpanLast" class="nav-link">CONTACT</span>
                     </div>
                 </div>
-            </header>
             <div class="heroImage">
-
+                <div class="hero-lead">
+                    Welcome To Our Studio!
+                </div>
+                <div class="intro-heading">
+                    IT'S NICE TO MEET YOU
+                </div>
+                <a class="tellMeButton">
+                    TELL ME MORE
+                </a>
             </div>
 </body>
 

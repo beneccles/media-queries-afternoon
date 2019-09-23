@@ -7,17 +7,12 @@
     box-sizing: border-box;
 }
 
-header {
-    width: 100vw;
-    background-color: #212529;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-    align-content: stretch;
-    z-index: 10;
+body, html {
+    margin: 0;
+    min-height: 150vh;
+    min-width: 100vw;
 }
+
 .headerBar {
     width: 100vw;
     background-color: #212529;
@@ -28,6 +23,15 @@ header {
 	align-items: center;
     align-content: stretch;
     z-index: 10;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.goClear {
+    background-color: transparent;
 }
 
 .logo {
@@ -96,13 +100,7 @@ the menu in a column. */
 
 
 /* ^HEADER^ */
-/*  Body */
-.heroImage {
-    background-image: url('https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1061&q=80');
-    background: cover;
-    background-repeat: no-repeat;
-}
-/* ^Body^ */
+
 @media (min-width: 1000px) {
     .dropdown {
         height: 0;
@@ -126,3 +124,27 @@ the menu in a column. */
         display: none;
     }
 }
+/*  Body */
+.heroImage {
+    background-image: url('https://images.unsplash.com/3/www.madebyvadim.com.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1061&q=80');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.hero-lead {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Sans Serif'
+}
+/* ^Body^ */
